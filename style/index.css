@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.menu{
+	width: 750px;
+	height: 500px;
+	margin: 20px auto;
+	position: relative;
+	border: 1px solid red;
+	overflow: hidden;
+}
+
+.menu li{
+	width: 500px;
+}
+
+.menu li a{
+	display: block;
+	width: 200px;
+	height: 60px;
+	text-align: right;
+	border-right: 1px solid red;
+	z-index: 0;
+	padding: 20px 20px;
+	cursor: pointer;
+}
+
+.menu li a:hover{
+	background-color: rgba(225, 239, 240, 0.4);
+}
+
+.menu li a .title{
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Alegreya SC', Georgia, serif;
+	color: #ddd;
+	transition: color 0.2s linear;
+}
+
+.menu li:nth-child(1):hover a .title{
+	color: rgb(163, 182, 31);
+}
+
+.menu li:nth-child(2):hover a .title{
+	color: rgb(163, 182, 31);
+}
+
+.menu li:nth-child(3):hover a .title{
+	color: rgb(147, 180, 105);
+}
+
+.menu li:nth-child(4):hover a .title{
+	color: rgb(252, 135, 5);
+}
+
+.menu li:nth-child(5):hover a .title{
+	color: rgb(191, 4, 23);
+}
+
+.menu li .content{
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	opacity: 0;
+	display: block;
+	width: 450px;
+	height: 200px;
+	margin-left: 20px;
+	z-index: -10;
+	transition: left 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.menu li:hover .content{
+	left: 240px;
+	opacity: 1;
+}
+
+.menu li .content p{
+	font-size: 13px;
+	line-height: 20px;
+	font-family: 'Alegreya SC', Georgia, serif;
+
+}
+
+b{
+	vertical-align: center;
+}
